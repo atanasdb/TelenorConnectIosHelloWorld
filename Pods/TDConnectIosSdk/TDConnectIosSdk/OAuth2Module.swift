@@ -80,7 +80,16 @@ open class OAuth2Module: NSObject, AuthzModule, SFSafariViewControllerDelegate {
             self.oauth2Session = session!
         }
 
+        initForcedHE();
+
+        URLProtocol.registerClass(ForcedHEURLProtocol.self)
+        print(isWifiEnabled() ? "Wifi YES" : "WiFi NO");
+        print(isCellularEnabled() ? "Cellular YES" : "Cellular NO");
+        testIP("pdp_ip0")
+        testIP("en0")
+
         self.config = config
+
         
         self.http = Http(baseURL: config.baseURL, requestSerializer: requestSerializer, responseSerializer:  responseSerializer)
         self.state = .authorizationStateUnknown
@@ -153,8 +162,8 @@ open class OAuth2Module: NSObject, AuthzModule, SFSafariViewControllerDelegate {
             UIApplication.shared.openURL(url as URL)
             return
         }
-        
-        var controller: UIViewController
+
+       /* var controller: UIViewController
         if #available(iOS 9.0, *) {
             let safariViewController = SFSafariViewController(url: url as URL)
             safariViewController.delegate = self
@@ -162,8 +171,11 @@ open class OAuth2Module: NSObject, AuthzModule, SFSafariViewControllerDelegate {
         } else {
             controller = OAuth2WebViewController()
             (controller as! OAuth2WebViewController).targetURL = url as URL!
-        }
-        
+        }*/
+        var controller: UIViewController
+        controller = OAuth2WebViewController()
+        (controller as! OAuth2WebViewController).targetURL = url as URL!
+
         UIApplication.shared.keyWindow?.rootViewController?.present(controller, animated: true, completion: nil)
     }
     
@@ -190,8 +202,9 @@ open class OAuth2Module: NSObject, AuthzModule, SFSafariViewControllerDelegate {
                 version = "v\(podVersion)_\(osVersion.majorVersion).\(osVersion.minorVersion).\(osVersion.patchVersion)"
             }
         }
-        
-        var params = "?scope=\(config.scopesEncoded)&redirect_uri=\(config.redirectURL.urlEncode())&client_id=\(config.clientId)&response_type=code&telenordigital_sdk_version=ios_\(version)"
+
+        let mccMnc:String = OperatorInfo.id()
+        var params = "?scope=\(config.scopesEncoded)&redirect_uri=\(config.redirectURL.urlEncode())&client_id=\(config.clientId)&response_type=code&telenordigital_sdk_version=ios_\(version)&login_hint=MCCMNC:\(mccMnc)"
         if let optionalParamsEncoded = optionalParamsEncoded {
             params += optionalParamsEncoded
         }

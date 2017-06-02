@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0139A8741ED86A71001C6FF7 /* ForcedHE.m in Sources */ = {isa = PBXBuildFile; fileRef = 0139A86A1ED86060001C6FF7 /* ForcedHE.m */; };
+		0139A8751ED86A71001C6FF7 /* ForcedHE.h in Headers */ = {isa = PBXBuildFile; fileRef = 0139A86D1ED8611C001C6FF7 /* ForcedHE.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0139A8761ED86A73001C6FF7 /* Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 0139A8701ED8682F001C6FF7 /* Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0139A8781ED87562001C6FF7 /* ForcedHEURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139A8771ED87562001C6FF7 /* ForcedHEURLProtocol.swift */; };
+		01CA97311EDD8E46003D7A2C /* OperatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA97301EDD8E46003D7A2C /* OperatorInfo.swift */; };
+		01CA97371EDEFEA6003D7A2C /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CA97361EDEFEA6003D7A2C /* libcurl.a */; };
+		01CA97391EDEFFD0003D7A2C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CA97381EDEFFD0003D7A2C /* libz.tbd */; };
 		03E6F19EBC6C9FC10FEF8799FCCF5A2C /* AeroGearHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D727E491B899A4F533B20651BCE2C95 /* AeroGearHttp.framework */; };
 		04B92A4A07207690E0F684EA0F5CD017 /* JsonResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2A3FA9DA7E403ADF51021250786CD /* JsonResponseSerializer.swift */; };
 		07BE452BD0D5FA5D175301B86429F623 /* AeroGearHttp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BAE0986D7D262EB75E12423A9A81C6 /* AeroGearHttp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -178,6 +185,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0139A86A1ED86060001C6FF7 /* ForcedHE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForcedHE.m; sourceTree = "<group>"; };
+		0139A86D1ED8611C001C6FF7 /* ForcedHE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForcedHE.h; sourceTree = "<group>"; };
+		0139A8701ED8682F001C6FF7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		0139A8771ED87562001C6FF7 /* ForcedHEURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcedHEURLProtocol.swift; sourceTree = "<group>"; };
+		01CA97301EDD8E46003D7A2C /* OperatorInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorInfo.swift; sourceTree = "<group>"; };
+		01CA97341EDEF209003D7A2C /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "TDConnectIosSdk/libcurl-ios-dist/lib/libcurl.a"; sourceTree = "<group>"; };
+		01CA97361EDEFEA6003D7A2C /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = lib/libcurl.a; sourceTree = "<group>"; };
+		01CA97381EDEFFD0003D7A2C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		021D916215B4252796944C51E8F380D8 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS7.swift; sourceTree = "<group>"; };
 		0368DA39AF3845ECF684E1ADC7741D01 /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
 		0510D9CA61427882916CDCF30A7A22E2 /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
@@ -189,8 +204,8 @@
 		142402DFAFCA55C2345472AD7F2BF4D1 /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
 		158490F609DBE13E26FEB5E7EF8090D4 /* Pods-TelenorConnectIosHelloWorld-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TelenorConnectIosHelloWorld-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1915FCE78DA2148B4737CFE7E8A19ACE /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
-		19EC36CCCFE62033BB90E592C1A206EC /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AeroGearHttp.framework; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7BCB96F8B82E534B17005B41656537 /* JWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWT.framework; path = JSONWebToken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EC36CCCFE62033BB90E592C1A206EC /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7BCB96F8B82E534B17005B41656537 /* JWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC744955322F6A5325A9B4AF83514ED /* StringResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResponseSerializer.swift; path = AeroGearHttp/StringResponseSerializer.swift; sourceTree = "<group>"; };
 		1D32F9469F17A8A3793E82BE706C6A13 /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = Sources/Base64.swift; sourceTree = "<group>"; };
 		205197AE13D00BA36864725568E59A97 /* DateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = TDConnectIosSdk/DateUtils.swift; sourceTree = "<group>"; };
@@ -223,7 +238,7 @@
 		509D64D4A09F99CAC93369D52B6E9D9D /* JsonRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonRequestSerializer.swift; path = AeroGearHttp/JsonRequestSerializer.swift; sourceTree = "<group>"; };
 		50C2F67251342F5FF2FC7241CA38F364 /* RequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestSerializer.swift; path = AeroGearHttp/RequestSerializer.swift; sourceTree = "<group>"; };
 		55D6CBD013AFDF43602968E2D5A3AD63 /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
-		58C959FDA0D5923148F0BB357F164649 /* TDConnectIosSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TDConnectIosSdk.framework; path = TDConnectIosSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C959FDA0D5923148F0BB357F164649 /* TDConnectIosSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDConnectIosSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		594466443A53C24EC0EB66BB21D7572D /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
 		5A86E2DEA55AACC547E837CA84107637 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DB09919C28D5F707BE19435A174F4FD /* ResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerializer.swift; path = AeroGearHttp/ResponseSerializer.swift; sourceTree = "<group>"; };
@@ -235,7 +250,7 @@
 		67660C5A372B463231DB69D63DE29CBA /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
 		70C7813F7AC424F3EC78B7F792D88ACA /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
 		74B0DBE041D60289E236A9E453F95318 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
-		75B1BFF95CCD078EB728E436B3AC92C3 /* AeroGearHttp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AeroGearHttp.modulemap; sourceTree = "<group>"; };
+		75B1BFF95CCD078EB728E436B3AC92C3 /* AeroGearHttp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AeroGearHttp.modulemap; sourceTree = "<group>"; };
 		7633F42C875A5128B7929AAB02CDC713 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
 		766913BF80BEF445B56CD9411736AEF3 /* JSONWebToken-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONWebToken-umbrella.h"; sourceTree = "<group>"; };
 		76D52B9E42F28937F82F5885180D60AE /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
@@ -243,11 +258,11 @@
 		77C3790B0594BFF2E3F2F07114316D5D /* RandomBytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytesSequence.swift; path = Sources/CryptoSwift/RandomBytesSequence.swift; sourceTree = "<group>"; };
 		7D5D9AA98B35B31574DD49BB21DFC7A7 /* TDConnectIosSdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TDConnectIosSdk-umbrella.h"; sourceTree = "<group>"; };
 		7DE1C50E23D6BFDB7A0D7989B74153E0 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
-		82C693E9D3D31279FEDF118EA8CDEBF5 /* Pods_TelenorConnectIosHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TelenorConnectIosHelloWorld.framework; path = "Pods-TelenorConnectIosHelloWorld.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C693E9D3D31279FEDF118EA8CDEBF5 /* Pods_TelenorConnectIosHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelenorConnectIosHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CA7C44E3DD49C0985A69C84FAA20D6 /* Claims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Claims.swift; path = Sources/Claims.swift; sourceTree = "<group>"; };
 		846956F595C3663BC7BCA73E2E5E1931 /* Pods-TelenorConnectIosHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelenorConnectIosHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		88BAA54C764534BD91B2345DDDB8022D /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
-		891E10CB5F505D2B7652E7FBCFAB7090 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		891E10CB5F505D2B7652E7FBCFAB7090 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
 		8A08E32DDF1BF7F1EBB6C96018861B8B /* OpenIDClaim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenIDClaim.swift; path = TDConnectIosSdk/OpenIDClaim.swift; sourceTree = "<group>"; };
 		8ADC3071FD34E7C70FD27BB94AB0FA23 /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
 		8C86D3832C2E652023357D3D3ADBD6DB /* BlockModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeWorker.swift; path = Sources/CryptoSwift/BlockMode/BlockModeWorker.swift; sourceTree = "<group>"; };
@@ -255,7 +270,7 @@
 		8E89DBD4FCF00E777377CA3D3C0D18EB /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
 		8F8A7063E3AA686A37A64F301CA6EC3A /* CSArrayType+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/CSArrayType+Foundation.swift"; sourceTree = "<group>"; };
 		916869A433D9543CAF71FA71A306B7C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		945667EAD48D7B488F197A213D22A097 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS5/PKCS5.swift; sourceTree = "<group>"; };
 		9596C68EB0A6AECF348AC9913A79B0ED /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
 		969763642DE0FBEA0E010D8FB0BDF5FA /* Pods-TelenorConnectIosHelloWorld-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TelenorConnectIosHelloWorld-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -297,13 +312,13 @@
 		DEB6AE99F2EC4BA2899C470096DF8E36 /* IdTokenValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdTokenValidator.swift; path = TDConnectIosSdk/IdTokenValidator.swift; sourceTree = "<group>"; };
 		E00E1B0D260FEF15573804174D0826A7 /* TelenorConnectOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TelenorConnectOAuth2Module.swift; path = TDConnectIosSdk/TelenorConnectOAuth2Module.swift; sourceTree = "<group>"; };
 		E017E971B1FFECD9E6AF84184558DF5B /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
-		E1F7827C17421DB487B337C3E17B9ABA /* TDConnectIosSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TDConnectIosSdk.modulemap; sourceTree = "<group>"; };
+		E1F7827C17421DB487B337C3E17B9ABA /* TDConnectIosSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TDConnectIosSdk.modulemap; sourceTree = "<group>"; };
 		E67A47110BF361457EE9C41CFD58BD99 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
 		E9290EF632A051C9102E7CE8A99BA603 /* Pods-TelenorConnectIosHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelenorConnectIosHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
-		EB55EC4E71AD5FE9D8007963747E9585 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC006FCB21F6718D4F20037FD6EEDA99 /* JSONWebToken.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JSONWebToken.modulemap; sourceTree = "<group>"; };
+		EB55EC4E71AD5FE9D8007963747E9585 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC006FCB21F6718D4F20037FD6EEDA99 /* JSONWebToken.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JSONWebToken.modulemap; sourceTree = "<group>"; };
 		ED9E5A231FEFA05DB37ED690992CFB43 /* OAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Session.swift; path = TDConnectIosSdk/OAuth2Session.swift; sourceTree = "<group>"; };
-		F35A1CAA6DE30E6312A7D7A038613A53 /* Pods-TelenorConnectIosHelloWorld.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TelenorConnectIosHelloWorld.modulemap"; sourceTree = "<group>"; };
+		F35A1CAA6DE30E6312A7D7A038613A53 /* Pods-TelenorConnectIosHelloWorld.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TelenorConnectIosHelloWorld.modulemap"; sourceTree = "<group>"; };
 		F62C08457121AB6806B385E8C6E170B3 /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
 		F71D657B2F01BE8F2DB477F963368018 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
 		F7A1F0CD9D7853C558F390E623AFAA88 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
@@ -327,6 +342,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01CA97391EDEFFD0003D7A2C /* libz.tbd in Frameworks */,
+				01CA97371EDEFEA6003D7A2C /* libcurl.a in Frameworks */,
 				03E6F19EBC6C9FC10FEF8799FCCF5A2C /* AeroGearHttp.framework in Frameworks */,
 				8B91497B5C51F9ED3F4C0379286B796D /* CryptoSwift.framework in Frameworks */,
 				61FA6D6255C7371333DBEDAC6FD77E99 /* Foundation.framework in Frameworks */,
@@ -407,6 +424,8 @@
 			isa = PBXGroup;
 			children = (
 				2872095A69AB761707FEE623D05697C5 /* AccountManager.swift */,
+				0139A86A1ED86060001C6FF7 /* ForcedHE.m */,
+				0139A86D1ED8611C001C6FF7 /* ForcedHE.h */,
 				4FC723AF310C7ED379DCCC921DC3B608 /* Config.swift */,
 				205197AE13D00BA36864725568E59A97 /* DateUtils.swift */,
 				2C22255B19322CFAAE9CDA62CC1B9E37 /* FacebookOAuth2Module.swift */,
@@ -415,13 +434,15 @@
 				AB5C95B27A66C53152089407A93BA2EC /* OAuth2Module.swift */,
 				ED9E5A231FEFA05DB37ED690992CFB43 /* OAuth2Session.swift */,
 				4413DD55A00E5715A1A0192FC72CE812 /* OAuth2WebViewController.swift */,
-				8A08E32DDF1BF7F1EBB6C96018861B8B /* OpenIDClaim.swift */,
 				E00E1B0D260FEF15573804174D0826A7 /* TelenorConnectOAuth2Module.swift */,
+				8A08E32DDF1BF7F1EBB6C96018861B8B /* OpenIDClaim.swift */,
 				26E0AF606B051CB58DA37A1946C9A156 /* TrustedPersistantOAuth2Session.swift */,
 				296123A54ECD2F58420993BDD43BBFA3 /* UntrustedMemoryOAuth2Session.swift */,
 				88F2F4E03690F30D618EF727EC91C235 /* Support Files */,
+				0139A8701ED8682F001C6FF7 /* Bridging-Header.h */,
+				0139A8771ED87562001C6FF7 /* ForcedHEURLProtocol.swift */,
+				01CA97301EDD8E46003D7A2C /* OperatorInfo.swift */,
 			);
-			name = TDConnectIosSdk;
 			path = TDConnectIosSdk;
 			sourceTree = "<group>";
 		};
@@ -439,6 +460,9 @@
 		7EF1382E5B0A6AB64543AA0674A5A6D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01CA97381EDEFFD0003D7A2C /* libz.tbd */,
+				01CA97361EDEFEA6003D7A2C /* libcurl.a */,
+				01CA97341EDEF209003D7A2C /* libcurl.a */,
 				8D727E491B899A4F533B20651BCE2C95 /* AeroGearHttp.framework */,
 				A0B9CCFFFFBB34D6EE594886D3601B12 /* CryptoSwift.framework */,
 				F9058C80A375D670360509F5D60EBBB7 /* JWT.framework */,
@@ -556,7 +580,6 @@
 				AE8AEB32153C187FD91890779C170FF9 /* ZeroPadding.swift */,
 				8C38C97CA1BFB4901CC7C86B1438BF64 /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -607,7 +630,6 @@
 				C57291F563D087E41FA1A1103C50B70D /* Utils.swift */,
 				908A29C878B3F6A3DE0AB3CF6358A007 /* Support Files */,
 			);
-			name = AeroGearHttp;
 			path = AeroGearHttp;
 			sourceTree = "<group>";
 		};
@@ -620,7 +642,6 @@
 				B3DC9BB91C5645559821865AEA489A21 /* JWT.swift */,
 				B3B4D0F6D7530183F81B6052258C88D9 /* Support Files */,
 			);
-			name = JSONWebToken;
 			path = JSONWebToken;
 			sourceTree = "<group>";
 		};
@@ -655,7 +676,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0139A8751ED86A71001C6FF7 /* ForcedHE.h in Headers */,
 				FBE83BA2046A4DBE4B22486C0FBAB097 /* TDConnectIosSdk-umbrella.h in Headers */,
+				0139A8761ED86A73001C6FF7 /* Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,9 +926,12 @@
 				FE293BD2A8963D2FD65422EB2A1B7B42 /* OAuth2Module.swift in Sources */,
 				99F8843BB0FD62F8C42E6844D6F7BD53 /* OAuth2Session.swift in Sources */,
 				7A1A94831B840756ADEE8BA63E52682E /* OAuth2WebViewController.swift in Sources */,
+				0139A8781ED87562001C6FF7 /* ForcedHEURLProtocol.swift in Sources */,
 				5991D5FE5647BB38AF2FF971EDF467F8 /* OpenIDClaim.swift in Sources */,
 				23B3B1B9FE691765B75338EEE13FB6B1 /* TDConnectIosSdk-dummy.m in Sources */,
+				01CA97311EDD8E46003D7A2C /* OperatorInfo.swift in Sources */,
 				C0EB0D593E003D8141A407CEAD6477C5 /* TelenorConnectOAuth2Module.swift in Sources */,
+				0139A8741ED86A71001C6FF7 /* ForcedHE.m in Sources */,
 				4B69583DFE7B212EDB086E2F96353C27 /* TrustedPersistantOAuth2Session.swift in Sources */,
 				30719B5AC65DEF88B6FBB0FFBFF448F9 /* UntrustedMemoryOAuth2Session.swift in Sources */,
 			);
@@ -1012,6 +1038,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1172,6 +1199,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TDConnectIosSdk/libcurl-ios-dist/lib",
+					"$(PROJECT_DIR)/lib",
+				);
 				MODULEMAP_FILE = "Target Support Files/TDConnectIosSdk/TDConnectIosSdk.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = TDConnectIosSdk;
@@ -1355,6 +1387,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -1375,10 +1408,19 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/TDConnectIosSdk/TDConnectIosSdk-prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"\"${PODS_ROOT}/Headers/Private\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = "Target Support Files/TDConnectIosSdk/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TDConnectIosSdk/libcurl-ios-dist/lib",
+					"$(PROJECT_DIR)/lib",
+				);
 				MODULEMAP_FILE = "Target Support Files/TDConnectIosSdk/TDConnectIosSdk.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = TDConnectIosSdk;
